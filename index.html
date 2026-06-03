@@ -5,33 +5,62 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Youtube</title>
+        <title>Faketube</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <div class="navbar">
-            <div class="logo">
-                <i>M</i>
-                <img src="./assets/yt_logo_fullcolor_almostblack_digital.png" alt="Youtube Logo">
-            </div>
-            <div class="searchbar">
-                <input type="text" placeholder="Search">
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
+        <!-- TOP NAVIGATION BAR -->
+        <header class="navbar container">
+            <div id="start" class="yt-masthead">
+                
+                <div id="logo" class="yt-masthead">
+                    <i class="material-icons">dehaze</i>
+                    <img src="./assets/yt_logo_fullcolor_almostblack_digital.png" alt="Youtube Logo">
+                </div>
+            
+            </div>  
 
-            <i>Mic</i>
+            <div id="center" class="yt-masthead">
+                
+                <div class="searchbar">
+                    <input type="text" placeholder="Search">
+                    <button><i class="material-icons">search</i></button>
+                </div>
+                
+                <div class="voice-search">
+                    <button><i class="material-icons">mic</i></button>
+                </div>
+            </div>
 
             <div class="navigation-icons">
-                <i>U</i>
-                <i>N</i>
-                <i>P</i>
+                <i class="material-icons">create</i>
+                <i class="material-icons">notifications</i>
+                <i class="material-icons">account_circle</i>
             </div>
-        </div>
-        <div class="mainbody">
+
+        </header>
+
+        <!-- MAIN LAYOUT -->
+        <div class="main-container">
             <div class="categories"></div>
             <div class="videos"></div>
-        </div>
         
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <div class="sidebar-content">
+                    <!-- Sidebar content goes here -->
+                </div>
+            </aside>
+
+            <!-- VIDEO FEED-->
+            <main class="content">
+            </main>
+
+        </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
