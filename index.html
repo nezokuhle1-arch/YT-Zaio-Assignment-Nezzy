@@ -44,9 +44,6 @@
 
         <!-- MAIN LAYOUT -->
         <div class="main-container">
-            <div class="categories"></div>
-            <div class="videos"></div>
-        
 
             <!-- SIDEBAR -->
             <aside class="sidebar">
@@ -130,12 +127,21 @@
 
             <!-- RIGHT SIDE: categories + video feed-->
             <div class="right-section">
-                <div class="categories"></div>
+                <!-- CATEGORY FILTER BAR -->
+                <div class="category-bar">
+                    <button class="category-chip active" data-filter="All">All</button>
+                    <button class="category-chip" data-filter="Personal Development">Personal Development</button>
+                    <button class="category-chip" data-filter="Podcasts">Podcasts</button>
+                    <button class="category-chip" data-filter="AI">AI</button>
+                    <button class="category-chip" data-filter="E-Commerce">E-Commerce</button>
+                    <button class="category-chip" data-filter="Entrepreneurship">Entrepreneurship</button>
+                    <button class="category-chip" data-filter="Cars">Cars</button>
+                </div>
                 <main class="content">
                     <div class="video-grid">
 
                         <!-- Card 1 -->
-                        <a href="#" class="video-card">
+                        <a href="#" class="video-card" data-category="Entrepreneurship">
                             <div class="thumbnail-container">
                                 <img src="./assets/bloomberg_spx1.avif" alt="Video Thumbnail" class="thumbnail">
                                 <span class="duration">12:34</span>
@@ -151,7 +157,7 @@
                         </a>
 
                         <!-- Card 2 -->
-                        <a href="#" class="video-card">
+                        <a href="#" class="video-card" data-category="Podcasts">
                             <div class="thumbnail-container">
                                 <img src="./assets/20vc_revolut.avif" alt="Video Thumbnail" class="thumbnail">
                                 <span class="duration">45:35</span>
@@ -167,7 +173,7 @@
                         </a>
 
                         <!-- Card 3 -->
-                        <a href="#" class="video-card">
+                        <a href="#" class="video-card" data-category="Personal Development">
                             <div class="thumbnail-container">
                                 <img src="./assets/bibleproject1.avif" alt="Video Thumbnail" class="thumbnail">
                                 <span class="duration">05:10</span>
@@ -183,7 +189,7 @@
                         </a>
 
                         <!-- Card 4 -->
-                        <a href="#" class="video-card">
+                        <a href="#" class="video-card" data-category="Personal Development">
                             <div class="thumbnail-container">
                                 <img src="./assets/Earned_silence.avif" alt="Video Thumbnail" class="thumbnail">
                                 <span class="duration">11:00</span>
@@ -199,7 +205,7 @@
                         </a>
 
                         <!-- Card 5 -->
-                        <a href="#" class="video-card">
+                        <a href="#" class="video-card" data-category="E-Commerce">
                             <div class="thumbnail-container">
                                 <img src="./assets/imangadhzi.avif" alt="Video Thumbnail" class="thumbnail">
                                 <span class="duration">09:15</span>
@@ -215,7 +221,7 @@
                         </a>
 
                         <!-- Card 6 -->
-                        <a href="#" class="video-card">
+                        <a href="#" class="video-card" data-category="Cars">
                             <div class="thumbnail-container">
                                 <img src="./assets/MrHowMuch.avif" alt="Video Thumbnail" class="thumbnail">
                                 <span class="duration">21:36</span>
@@ -231,7 +237,7 @@
                         </a>
 
                         <!-- Card 7 -->
-                        <a href="#" class="video-card">
+                        <a href="#" class="video-card" data-category="Entrepreneurship">
                             <div class="thumbnail-container">
                                 <img src="./assets/Nic_munoz.avif" alt="Video Thumbnail" class="thumbnail">
                                 <span class="duration">24:25</span>
@@ -247,7 +253,7 @@
                         </a>
 
                         <!-- Card 8 -->
-                        <a href="#" class="video-card">
+                        <a href="#" class="video-card" data-category="AI">
                             <div class="thumbnail-container">
                                 <img src="./assets/prime_code.avif" alt="Video Thumbnail" class="thumbnail">
                                 <span class="duration">20:12</span>
