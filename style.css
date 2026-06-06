@@ -130,3 +130,58 @@ body {
 .navigation-icons i:hover {
     background-color: var(--bg-hover);
 }
+
+
+/* Sidebar */
+/* ========================
+   SIDEBAR
+======================== */
+.sidebar {
+    position: fixed;
+    top: var(--navbar-height);
+    left: 0;
+    width: var(--sidebar-width);
+    height: calc(100vh - var(--navbar-height));
+    overflow-y: auto;
+    padding: 12px 0;
+    background-color: var(--bg-primary);
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 10px 24px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 0 8px;
+    font-size: 14px;
+}
+
+.sidebar-item:hover {
+    background-color: var(--bg-hover);
+}
+
+.sidebar-item.active {
+    background-color: var(--bg-hover);
+    font-weight: 600;
+}
+
+.sidebar-section-title {
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sidebar hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 12px 0;
+}
+
+.sub-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
