@@ -1,7 +1,15 @@
+/*===================================
+    YouTube CSS Stylesheet
+  ====================================*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
 .navbar {
@@ -16,4 +24,109 @@
 .navbar #logo {
     display: flex;
     align-items: center;
+}
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f2f2f2;
+  --bg-hover: #e5e5e5;
+  --text-primary: #0f0f0f;
+  --text-secondary: #606060;
+  --border-color: #e5e5e5;
+  --navbar-height: 56px;
+  --sidebar-width: 240px;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* Navbar Logo */
+.navbar #logo img {
+    height: 44px;
+    width: auto;
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.navbar #logo i {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    color: var(--text-primary);
+}
+
+.navbar #logo i:hover {
+    background-color: var(--bg-hover);
+}
+
+/* Navbar Center - Search */
+#center {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    max-width: 600px;
+    margin: 0 40px;
+}
+
+.searchbar {
+    display: flex;
+    flex: 1;
+    border: 1px solid var(--border-color);
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.searchbar input {
+    flex: 1;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+.searchbar button {
+    padding: 8px 20px;
+    border: none;
+    background-color: var(--bg-secondary);
+    cursor: pointer;
+    border-left: 1px solid var(--border-color);
+}
+
+.searchbar button:hover {
+    background-color: var(--bg-hover);
+}
+
+.voice-search button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.voice-search button:hover {
+    background-color: var(--bg-hover);
+}
+
+/* Navbar Right - Icons */
+.navigation-icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navigation-icons i {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.navigation-icons i:hover {
+    background-color: var(--bg-hover);
 }
