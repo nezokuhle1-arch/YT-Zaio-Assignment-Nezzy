@@ -30,3 +30,16 @@ document.querySelectorAll('.thumbnail-container').forEach(container => {
         video.currentTime = 0;
     });
 });
+
+// ── Dark Mode Toggle ──────────────────────────────────────────────────────────
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    
+    if (document.body.classList.contains('dark')) {
+        darkModeToggle.textContent = 'light_mode';
+    } else {
+        darkModeToggle.textContent = 'dark_mode';
+    }
+});

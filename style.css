@@ -1,6 +1,4 @@
-/*===================================
-    YouTube CSS Stylesheet
-  ====================================*/
+/* ── YouTube CSS Stylesheet ──────────────────────────────────────────────────── */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
@@ -17,8 +15,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
+    background-color: var(--bg-primary);
+    border-bottom: 1px solid var(--border-color);
     position: fixed;
     top: 0;
     left: 0;
@@ -43,12 +41,22 @@
   --sidebar-width: 240px;
 }
 
+/* ── DARK MODE ─────────────────────────────────────────────────────────────── */
+body.dark {
+    --bg-primary: #0f0f0f;
+    --bg-secondary: #272727;
+    --bg-hover: #3f3f3f;
+    --text-primary: #ffffff;
+    --text-secondary: #aaaaaa;
+    --border-color: #3f3f3f;
+}
+
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
 }
 
-/* Navbar Logo */
+/* ── Navbar Logo ─────────────────────────────────────────────────────────────── */
 .navbar #logo img {
     height: 44px;
     width: auto;
@@ -119,7 +127,7 @@ body {
     background-color: var(--bg-hover);
 }
 
-/* Navbar Right - Icons */
+/* ── Navbar Right - Icons ─────────────────────────────────────────────────────── */
 .navigation-icons {
     display: flex;
     align-items: center;
@@ -201,7 +209,7 @@ body {
     padding: 24px 24px 0;
 }
 
-/* CATEGORY FILTER BAR */
+/* ── CATEGORY FILTER BAR ─────────────────────────────────────────────────────── */
 .category-bar {
     display: flex;
     align-items: center;
