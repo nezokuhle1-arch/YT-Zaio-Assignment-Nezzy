@@ -8,6 +8,17 @@ Live demo: https://falsetube.netlify.app
 - CSS3
 - Vanilla JavaScript
 
+## File Structure scafolding:
+**faketube/**
+├── index.html      — structure and content
+├── style.css       — all styling and responsive design
+├── script.js       — all JavaScript functionality
+├── favicon.ico     — browser tab icon
+└── assets/         — all images and video files
+    ├── thumbnails  — video thumbnail images (.avif)
+    ├── channels    — channel avatar images (.jpg)
+    └── previews    — hover preview clips (.mp4)
+
 ## Features
 
 ### Manual Feature (No AI)

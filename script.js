@@ -1,4 +1,4 @@
-// ── Category filter ──────────────────────────────────────────────────────────
+// ── Category filter (MADE BY CURSOR) ──────────────────────────────────────────────────────────
 const chips = document.querySelectorAll('.category-chip');
 const cards = document.querySelectorAll('.video-card');
 
@@ -16,7 +16,7 @@ chips.forEach(chip => {
     });
 });
 
-// ── Hover video preview ───────────────────────────────────────────────────────
+// ── Hover video preview (MADE BY CURSOR) ────────────────────────────────────────────────────────
 document.querySelectorAll('.thumbnail-container').forEach(container => {
     const video = container.querySelector('.preview-video');
     if (!video) return;

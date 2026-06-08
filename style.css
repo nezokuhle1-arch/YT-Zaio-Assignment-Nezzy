@@ -271,6 +271,7 @@ body {
     overflow: hidden;
 }
 
+/* ──── Made by Cursor ────────────────────────────────────────────────────────────────── */
 .thumbnail {
     width: 100%;
     aspect-ratio: 16/9;
@@ -289,8 +290,8 @@ body {
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
-    overflow: hidden;
-}
+    overflow: hidden; 
+} 
 
 .thumbnail-container:hover .thumbnail {
     opacity: 0;
@@ -303,6 +304,7 @@ body {
 .thumbnail-container:not(.has-video):hover .thumbnail {
     opacity: 1;
 }
+/* ──── End of Cursor's code ─────────────────────────────────────────────────────────────── */
 
 .duration {
     position: absolute;
