@@ -1,6 +1,6 @@
 # FalseTube 🎬
 
-A YouTube homepage clone built as part of a Zaio assignment.
+A YouTube homepage clone built as part of my Zaio assignment.
 Live demo: https://falsetube.netlify.app
 
 ## Built With

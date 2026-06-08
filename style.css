@@ -209,7 +209,7 @@ body {
     padding: 24px 24px 0;
 }
 
-/* ── CATEGORY FILTER BAR ─────────────────────────────────────────────────────── */
+/* ── CATEGORY FILTER BAR (DONE W/ CURSOR SUPPORT) ─────────────────────────────────────── */
 .category-bar {
     display: flex;
     align-items: center;
